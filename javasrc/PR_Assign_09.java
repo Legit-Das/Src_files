@@ -19,14 +19,13 @@ class Matrix {
                 mA[i][j] = sc.nextInt();
             }
         }
-        sc.close();
     }
 
     public void display() {
 
         for(int i = 0; i < r; i++) {
             for(int j = 0; j < c; j++) {
-                System.out.print(mA[i][j]);
+                System.out.print(mA[i][j] + "\t");
             }
             System.out.println("");
         }
