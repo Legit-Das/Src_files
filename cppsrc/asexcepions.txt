@@ -1,0 +1,6 @@
+Exceptions are runtime anomalies or unusual conditions.
+
+Exceptions: 1. Synchronous Exceptions
+            2. Asynchronous Exceptions
+
+try block: This block is a group of statements that may generate an exception. When an exception is generated, it is thrown using the keyword "throw". The throw keyword invokes the exception handling routine.

@@ -1,0 +1,13 @@
+Scope of Objects
+Global var-|- Non-static global ( Entire program)
+           |- Static global (File scope)
+
+File Scope = Translation unit scope
+
+globar variables are constructed before the invocation of main() function
+
+Destructors - Called after object scope ends
+
+Friend function - Can act as a bridge between tow classes
+
+Operator Overloading - discussion only

@@ -1,0 +1,1 @@
+When NerdTree is open, press 'm' to bring up the menu that essentially allows you to create or modify files.

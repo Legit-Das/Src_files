@@ -1,0 +1,20 @@
+g++ PR_02-07-21_1.cpp -o PR_02-07-21_1
+PR_02-07-21_1.cpp:19:8: error: ambiguating new declaration of ‘double volume(int)’
+   19 | double volume(int x)
+      |        ^~~~~~
+PR_02-07-21_1.cpp:9:5: note: old declaration ‘int volume(int)’
+    9 | int volume(int x)
+      |     ^~~~~~
+PR_02-07-21_1.cpp: In function ‘int main()’:
+PR_02-07-21_1.cpp:28:22: error: no matching function for call to ‘volume(int, int, int)’
+   28 |     v1 = volume(1,2,3);
+      |                      ^
+PR_02-07-21_1.cpp:9:5: note: candidate: ‘int volume(int)’
+    9 | int volume(int x)
+      |     ^~~~~~
+PR_02-07-21_1.cpp:9:5: note:   candidate expects 1 argument, 3 provided
+PR_02-07-21_1.cpp:14:8: note: candidate: ‘double volume(int, int)’
+   14 | double volume(int x, int y)
+      |        ^~~~~~
+PR_02-07-21_1.cpp:14:8: note:   candidate expects 2 arguments, 3 provided
+
