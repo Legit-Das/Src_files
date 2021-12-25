@@ -23,6 +23,7 @@ class Matrix {
 
     public void display() {
 
+        System.out.println("");
         for(int i = 0; i < r; i++) {
             for(int j = 0; j < c; j++) {
                 System.out.print(mA[i][j] + "\t");
@@ -33,7 +34,7 @@ class Matrix {
 
     public static void multiplyMatrix( Matrix m1, Matrix m2) {
         if(m1.c == m2.r) {
-            Matrix m3 = new Matrix(m1.c, m2.r);
+            Matrix m3 = new Matrix(m1.r, m2.c);
             for(int i = 0; i < m1.r; i++) {
                 for(int j = 0; j < m2.c; j++) {
                     m3.mA[i][j] = 0;
