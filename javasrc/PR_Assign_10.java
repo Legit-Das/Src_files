@@ -1,19 +1,37 @@
+class Employee {
+    protected int emp_id;
+    protected String name;
+    protected String desig;
+    protected double salary;
+
+    public Employee() {}
+
+    public Employee(int e_id, String n, String d, double s) {
+        emp_id = e_id;
+        name = n;
+        desig = d;
+        salary = s;
+    }
+
+    public int getEmpId() {
+        return emp_id;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getDesig() {
+        return desig;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+}
+
 class PR_Assign_10 {
     public static void main(String[] args) {
-        int[] ent = new int[4];
-        for(int i = 0; i < 4; i++) {
-            ent[i] = Integer.parseInt(args[i]);
-        }
-
-        int sum = 0;
-        int avg = 0;
-
-        for(int i: ent) {
-            sum += i;
-        }
-        avg = sum/4;
-
-        System.out.println("The sum of the command line argument numbers: " + sum);
-        System.out.println("The average of the command line argument numbers: " + avg);
+        
     }
 }
