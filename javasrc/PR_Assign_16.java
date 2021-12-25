@@ -43,6 +43,7 @@ class Teacher extends Person {
         name = sc.nextLine();
         System.out.print("Enter the age of teacher: ");
         age = sc.nextInt();
+        sc.nextLine();
         System.out.print("Enter the department of teacher: ");
         dept = sc.nextLine();
         System.out.print("Enter how many years the teacher has been teaching: ");
