@@ -16,7 +16,7 @@ class Calculator {
     }
 }
 
-class PR_Assignment_08 {
+class PR_Assign_08 {
     public static void main(String[] args) {
         int a = 10;
         int b = 3;
