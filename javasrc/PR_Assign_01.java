@@ -6,9 +6,9 @@ class Rectangle {
 
     public void setVals() {
         Scanner v = new Scanner(System.in);
-        System.out.print("\nEnter the value of lenght: ");
+        System.out.print("Enter the value of lenght: ");
         len = v.nextLong();
-        System.out.print("\nEnter the value of windth: ");
+        System.out.print("Enter the value of windth: ");
         wid = v.nextLong();
     }
 
@@ -27,7 +27,7 @@ class PR_Assign_01 {
 
         r1.setVals();
 
-        System.out.println("The perimeter of the rectnagle = " + r1.calcPerm());
+        System.out.println("\nThe perimeter of the rectnagle = " + r1.calcPerm());
         System.out.println("The area of the rectnagle = " + r1.calcArea());
     }
 }
