@@ -170,7 +170,8 @@ public class PR_Assign_04 {
         Scanner ch = new Scanner(System.in);
 
         do {
-            System.out.print("\n1. Insert at start, 2. Insert at end, 3. Insert at any position, 4.Delete at start, 5.Delete at end, 6. Delete at any position, 7. Print List 8. Count of nodes 0. Exit\n");
+            System.out.print("\n1. Insert at start, 2. Insert at end, 3. Insert at any position, 4.Delete at start");
+            System.out.print("\n5.Delete at end, 6. Delete at any position, 7. Print List 8. Count of nodes 0. Exit\n");
             System.out.print("Enter your choice: ");
             choice = ch.nextInt();
             int d,pos;
@@ -189,7 +190,7 @@ public class PR_Assign_04 {
                     break;
                     
                 case 3:
-                    System.out.print("Enter Node data and position values: ");
+                    System.out.print("Enter Node's position & values: ");
                     d = ch.nextInt();
                     pos = ch.nextInt();
                     myLL.insertAtPosition(d, pos);

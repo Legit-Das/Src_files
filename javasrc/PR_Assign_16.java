@@ -25,7 +25,7 @@ class Student extends Person {
     }
 
     public void print() {
-        System.out.println("The name of the student = " + name);
+        System.out.println("\nThe name of the student = " + name);
         System.out.println("The age of the student = " + age);
         System.out.println("The department of the stdent = " + dept);
         System.out.println("The semester of the student = " + sem);
@@ -51,7 +51,7 @@ class Teacher extends Person {
     }
 
     public void print() {
-        System.out.println("The name of the teacher = " + name);
+        System.out.println("\nThe name of the teacher = " + name);
         System.out.println("The age of the teacher = " + age);
         System.out.println("The department of the teacher = " + dept);
         System.out.println("The number of years actively tought =" + yearsActive);
@@ -62,13 +62,12 @@ class Teacher extends Person {
 class PR_Assign_16 {
     public static void main(String[] args) {
         Student s1 = new Student();
-        
         s1.read();
-        s1.print();
 
         Teacher t1 = new Teacher();
-
         t1.read();
+
+        s1.print();
         t1.print();
     }
 }

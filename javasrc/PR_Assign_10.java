@@ -50,7 +50,7 @@ class PR_Assign_10 {
         empList.addElement(new Employee(104, "Ramesh Patil", "Clarke", 22000.0));
         empList.addElement(new Employee(105, "Nirmal Kumar", "Clarke", 21000.0));
         
-        System.out.println("Details for all employees:");
+        System.out.println("Details for all employees:\n");
         for(int i = 0; i < (empList.capacity()); i++) {
             Employee.printEmployee(empList.get(i));
         }

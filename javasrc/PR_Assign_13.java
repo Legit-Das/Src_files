@@ -8,7 +8,7 @@ class EmployeeSalary {
 	protected double ma;
 	
 	public void getbasic() {
-		System.out.println("Enter the basic amount: ");
+		System.out.print("Enter the basic amount: ");
 		Scanner sc = new Scanner(System.in);
 		basic = sc.nextDouble();
 	}
@@ -29,11 +29,11 @@ class Scientist extends EmployeeSalary {
 	public void getData() {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("For Scientist: ");
+		System.out.println("\nFor Scientist: ");
 		getbasic();
-		System.out.print("\nEnter the bonus per publication: ");
+		System.out.print("Enter the bonus per publication: ");
 		bon_per_pub = sc.nextInt();
-		System.out.print("\nEnter the number of publication: ");
+		System.out.print("Enter the number of publication: ");
 		num_of_pub = sc.nextInt();
 	}
 	
@@ -41,7 +41,7 @@ class Scientist extends EmployeeSalary {
 		double net_bonus;
 		net_bonus = bon_per_pub * num_of_pub;
 		double net_sal = net_bonus + regularSalary();
-		System.out.println("The net salary is : " + net_sal);
+		System.out.println("The net salary for the scientist is : " + net_sal);
 	}
 }
 
@@ -52,11 +52,11 @@ class Developer extends EmployeeSalary {
 	public void getData() {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("For Developer: ");
+		System.out.println("\nFor Developer: ");
 		getbasic();
-		System.out.print("\nEnter the bonus per patents: ");
+		System.out.print("Enter the bonus per patents: ");
 		bon_per_patent = sc.nextInt();
-		System.out.print("\nEnter the number of patents: ");
+		System.out.print("Enter the number of patents: ");
 		num_of_patent = sc.nextInt();
 	}
 	
@@ -64,7 +64,7 @@ class Developer extends EmployeeSalary {
 		double net_bonus;
 		net_bonus = bon_per_patent * num_of_patent;
 		double net_sal = net_bonus + regularSalary();
-		System.out.println("The net salary is : " + net_sal);
+		System.out.println("The net salary for the developer is : " + net_sal);
 	}
 }
 
@@ -75,11 +75,11 @@ class ProjectLeader extends EmployeeSalary {
 	public void getData() {
 		
 		Scanner sc = new Scanner(System.in);
-		System.out.println("For ProjectLeader: ");
+		System.out.println("\nFor Project Leader: ");
 		getbasic();
-		System.out.print("\nEnter the bonus per project: ");
+		System.out.print("Enter the bonus per project: ");
 		bon_per_project = sc.nextInt();
-		System.out.print("\nEnter the number of project: ");
+		System.out.print("Enter the number of project: ");
 		num_of_project = sc.nextInt();
 	}
 	
@@ -87,7 +87,7 @@ class ProjectLeader extends EmployeeSalary {
 		double net_bonus;
 		net_bonus = bon_per_project * num_of_project;
 		double net_sal = net_bonus + regularSalary();
-		System.out.println("The net salary is : " + net_sal);
+		System.out.println("The net salary for the Project Leader is : " + net_sal);
 	}
 }
 
@@ -100,7 +100,7 @@ class PR_Assign_13{
 		s1.getData();
 		d1.getData();
 		pl1.getData();
-		
+		System.out.println();
 		s1.netSalary();
 		d1.netSalary();
 		pl1.netSalary();
